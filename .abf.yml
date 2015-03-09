@@ -1,0 +1,4 @@
+sources:
+  linux-3.10.53-omv2.tar.xz: c37742ef40b3b483ed9a9be748414d85a2b633a4
+  linux-3.10.53-sabreboard.tar.xz: be6fbe8a3e9cb070caa88af34fc29e9bac0988db
+  patch-3.10.53.xz: 6362ac3f77369b11b96463d9fde3cff31d4e68d6
