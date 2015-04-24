@@ -1,5 +1,5 @@
 sources:
   linux-3.14.28-sabreboard.tar.xz: f6498f38d1215492500ea4e5273e479889b77bbf
-  linux-3.14.28-omv2.tar.xz: 5d6e52ec1096c0a19c53ece326fbc94c5d28b6d4
   linux-3.14.28-sabreboard.tar.sign: 42f5ecc9b88b8cf82520ee79046ce26d50ce2d86
   patch-3.14.28.xz: aebbe1abb9df54277f8069522dad3eb8bb6aceec
+  linux-3.14.28-omv2.tar.xz: 559d832b8c550be7f4dbce83b7c74615f05b99ed
