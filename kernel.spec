@@ -1,8 +1,8 @@
 #
 %define kernelversion	3
-%define patchlevel	10
+%define patchlevel	14
 # sublevel is now used for -stable patches
-%define sublevel	53
+%define sublevel	28
 
 # Package release
 %define mibrel		2
@@ -198,7 +198,7 @@
 %define build_nrj_laptop	0
 %define build_kirkwood		0
 %define build_versatile		0
-%define build_sabreboard		1
+%define build_sabreboard	1
 # no cpupower tools on arm yet
 %define build_cpupower		0
 %define build_perf		0
