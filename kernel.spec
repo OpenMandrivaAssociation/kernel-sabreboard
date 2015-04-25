@@ -1678,7 +1678,7 @@ find . -name '*~' -o -name '*.orig' -o -name '*.append' | %kxargs rm -f
 ############################################################
 %if %{mdvver} == 201500
 # Make sure we don't use gold
-export LD="%{_target_platform}-ld"
+export LD="%{_target_platform}-ld.bfd"
 export LDFLAGS="--hash-style=sysv --build-id=none"
 # (tpg) 
 export CC=gcc
