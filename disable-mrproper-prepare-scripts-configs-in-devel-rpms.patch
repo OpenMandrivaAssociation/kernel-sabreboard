@@ -1,8 +1,8 @@
 diff --git a/Makefile b/Makefile
-index 661e098..c7eb190 100644
+index a2e572b..e848452 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -513,9 +513,7 @@ ifeq ($(KBUILD_EXTMOD),)
+@@ -522,9 +522,7 @@ ifeq ($(KBUILD_EXTMOD),)
  # Carefully list dependencies so we do not try to build scripts twice
  # in parallel
  PHONY += scripts
@@ -13,7 +13,7 @@ index 661e098..c7eb190 100644
  
  # Objects we will link into vmlinux / subdirs we need to visit
  init-y		:= init/
-@@ -837,7 +835,7 @@ prepare0: archprepare FORCE
+@@ -886,7 +884,7 @@ prepare0: archprepare FORCE
  	$(Q)$(MAKE) $(build)=.
  
  # All the preparing..
@@ -22,7 +22,7 @@ index 661e098..c7eb190 100644
  
  # Generate some files
  # ---------------------------------------------------------------------------
-@@ -1019,13 +1017,8 @@ endif # CONFIG_MODULES
+@@ -1068,13 +1066,8 @@ endif # CONFIG_MODULES
  CLEAN_DIRS  += $(MODVERDIR)
  
  # Directories & files removed with 'make mrproper'
@@ -32,13 +32,13 @@ index 661e098..c7eb190 100644
 -		  Module.symvers tags TAGS cscope* GPATH GTAGS GRTAGS GSYMS \
 -		  signing_key.priv signing_key.x509 x509.genkey		\
 -		  extra_certificates signing_key.x509.keyid		\
--		  signing_key.x509.signer include/linux/version.h
+-		  signing_key.x509.signer
 +MRPROPER_DIRS  += ""
 +MRPROPER_FILES += ""
  
  # clean - Delete most, but leave enough to build external modules
  #
-@@ -1046,7 +1039,7 @@ clean: archclean vmlinuxclean
+@@ -1095,7 +1088,7 @@ clean: archclean vmlinuxclean
  #
  mrproper: rm-dirs  := $(wildcard $(MRPROPER_DIRS))
  mrproper: rm-files := $(wildcard $(MRPROPER_FILES))
