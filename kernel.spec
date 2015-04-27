@@ -1940,7 +1940,7 @@ $DevelRoot/include/uapi
 $DevelRoot/include/video
 $DevelRoot/include/xen
 %ifarch %arm
-#$DevelRoot/include/kvm
+$DevelRoot/include/kvm
 %endif
 $DevelRoot/init
 $DevelRoot/ipc
@@ -2621,7 +2621,7 @@ rm -rf %{buildroot}
 %{_kerneldir}/include/video
 %{_kerneldir}/include/xen
 %ifarch %{arm}
-#% {_kerneldir}/include/kvm
+%{_kerneldir}/include/kvm
 %endif
 %{_kerneldir}/init
 %{_kerneldir}/ipc
