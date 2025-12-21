@@ -618,6 +618,7 @@ processor mode, use the "nosmp" boot parameter.
 
 Autoreqprov: 	no
 
+BuildRequires:	make
 BuildRequires: 	bc
 BuildRequires: 	binutils
 BuildRequires: 	gcc
